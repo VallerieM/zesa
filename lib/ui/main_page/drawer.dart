@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zetdc/pages/login_page.dart';
-import 'package:zetdc/ui/drawer_page/my_account.dart';
+import 'package:zetdc/pages/my_account_page.dart';
 
 class AppDrawer extends StatelessWidget{
 

@@ -47,6 +47,15 @@ flutter:
    - android/assets/images/landing.jpg
    - android/assets/images/outage.png
    - android/assets/images/tenders.png
+   - android/assets/images/landingImage.png
+   - android/assets/images/bulb.png
+   - android/assets/images/electricbulb.jpg
+   - android/assets/images/foto.png
+   - android/assets/images/hands.png
+   - android/assets/images/landing.png
+   - android/assets/images/light-bulb-in-hand.png
+   - android/assets/images/lightbulb.jpg
+   - android/assets/images/myPower.png
 
   # assets:
   #  - images/a_dot_burr.jpeg

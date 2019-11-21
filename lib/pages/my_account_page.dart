@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zetdc/pages/add_meter_page.dart';
 
 class MyAccountPage extends StatelessWidget {
   const MyAccountPage({Key key}) : super(key: key);
@@ -47,10 +48,10 @@ class MyAccountPage extends StatelessWidget {
                               //   Scaffold.of(context)
                               //       .showSnackBar(SnackBar(content: Text('Processing Data')));
                               // }
-                             // Navigator.push(
-                            //  context, 
-                             // MaterialPageRoute(builder: (context) => MainPage()),
-                            //  );
+                             Navigator.push(
+                             context, 
+                             MaterialPageRoute(builder: (context) => AddMeterPage()),
+                             );
                             },
                             child: Text('ADD METER'),
                             color: Theme.of(context).secondaryHeaderColor,
