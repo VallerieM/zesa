@@ -13,7 +13,7 @@ children: <Widget>[
   Container(
     decoration: BoxDecoration(
       image: DecorationImage(
-        image: AssetImage("android/assets/images/billing.png"),
+        image: AssetImage("android/assets/images/lightbulb.jpg"),
         fit: BoxFit.cover,
       ),
     ),
@@ -27,13 +27,13 @@ children: <Widget>[
       padding: EdgeInsets.all(8.0),
       child: Column(
         children: <Widget>[ 
-          SizedBox(height: 400),         
+          SizedBox(height: 350),         
             Text('Welcome to myPower', style: new TextStyle(
-              color: Colors.black,
-              fontSize: 25,
+              color: Colors.white,
+              fontSize: 30,
               fontWeight: FontWeight.bold
             )),
-            SizedBox(height: 20),
+            SizedBox(height: 50),
             LandingBtns()
           ],
       )

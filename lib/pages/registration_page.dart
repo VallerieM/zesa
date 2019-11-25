@@ -10,7 +10,7 @@ class RegistrationPage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true ,
-          title: Text('REGISTRATION', textAlign: TextAlign.center),
+          title: Text('', textAlign: TextAlign.center),
           leading: new IconButton(
              icon: new Icon(Icons.arrow_back),
              onPressed: () {
@@ -22,6 +22,14 @@ class RegistrationPage extends StatelessWidget {
           padding: EdgeInsets.all(30.0),
           child: ListView(
             children: <Widget>[
+              Padding(
+              padding: EdgeInsets.fromLTRB(80.0, 10.0, 15.0, 10.0),
+                child: Text('Registration', style: new TextStyle(
+                  color: Colors.black,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold
+                ))
+            ),
               RegistrationForm()
             ],
           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zetdc/ui/add_meter_page/new_meter_form.dart';
 
 class AddMeterPage extends StatelessWidget {
   const AddMeterPage({Key key}) : super(key:key);
@@ -17,6 +18,25 @@ class AddMeterPage extends StatelessWidget {
              },
           ),
         ),
+
+          body: Padding(
+          padding: EdgeInsets.all(8.0), 
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+             Padding(
+              padding: EdgeInsets.fromLTRB(20.0, 10.0, 15.0, 10.0),
+                child: Text('Post Paid', style: new TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold
+                ))
+            ), 
+           NewMeterForm(),
+            ]
+
+      )
+    ),
       ),
     );
 }

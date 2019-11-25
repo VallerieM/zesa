@@ -25,6 +25,7 @@ class LandingBtns extends StatelessWidget {
             splashColor: Colors.grey,
           ),
           OutlineButton(
+            textColor: Colors.white,
             child: Text('LOGIN'),
             onPressed: () {
               Navigator.push(

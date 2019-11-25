@@ -11,9 +11,10 @@ class MyAccountPage extends StatelessWidget {
        child: Scaffold(
           appBar: AppBar(
           centerTitle: true ,
-          title: Text('MY ACCOUNT', textAlign: TextAlign.center),
+          title: Text('MY ACCOUNT', textAlign: TextAlign.center, 
+                 ),
           leading: new IconButton(
-             icon: new Icon(Icons.arrow_back),
+             icon: new Icon(Icons.arrow_back,),
              onPressed: () {
                Navigator.pop(context);
              },
@@ -25,7 +26,7 @@ class MyAccountPage extends StatelessWidget {
         children: <Widget>[          
             Text('Your username', style: new TextStyle(
               color: Colors.black,
-              fontSize: 25,
+              fontSize: 20,
               fontWeight: FontWeight.bold,
             )),
             Text('email@example.com', style: new TextStyle(
