@@ -104,37 +104,37 @@ class MainPage extends StatelessWidget {
                                         ),
                                        // color: Colors.purple[200],
                                       ),
-                                      Container(
-                                        margin: const EdgeInsets.all(0.0),
-                                        padding: const EdgeInsets.all(0),
-                                        decoration: myBoxDecoration(),
-                                         child: Column(
-                                          children: <Widget>[
-                                            Container (
-                                              width: 120,
-                                              height: 80,
-                                              child: VacanciesTendersImage(),
-                                            ),
-                                           new FlatButton(
-                                                textColor: Colors.black,
-                                                onPressed: () {
-                                                    Navigator.push(
-                                                      context, 
-                                                      MaterialPageRoute(builder: (context) => VacanciesTendersPage()),
-                                                    );
-                                                },
-                                                child: Text("SUBSCRIBE", 
-                                                style: TextStyle(
-                                                  fontSize: 15, 
-                                                  fontWeight: FontWeight.bold,
-                                                  color: Colors.black),
-                                                  ),
-                                            ),
-                                            new Text('Vacancies and Tenders'),
-                                          ],
-                                        ),
-                                       // color: Colors.purple[300],
-                                      ),
+                                      // Container(
+                                      //   margin: const EdgeInsets.all(0.0),
+                                      //   padding: const EdgeInsets.all(0),
+                                      //   decoration: myBoxDecoration(),
+                                      //    child: Column(
+                                      //     children: <Widget>[
+                                      //       Container (
+                                      //         width: 120,
+                                      //         height: 80,
+                                      //         child: VacanciesTendersImage(),
+                                      //       ),
+                                      //      new FlatButton(
+                                      //           textColor: Colors.black,
+                                      //           onPressed: () {
+                                      //               Navigator.push(
+                                      //                 context, 
+                                      //                 MaterialPageRoute(builder: (context) => VacanciesTendersPage()),
+                                      //               );
+                                      //           },
+                                      //           child: Text("SUBSCRIBE", 
+                                      //           style: TextStyle(
+                                      //             fontSize: 15, 
+                                      //             fontWeight: FontWeight.bold,
+                                      //             color: Colors.black),
+                                      //             ),
+                                      //       ),
+                                      //       new Text('Vacancies and Tenders'),
+                                      //     ],
+                                      //   ),
+                                      //  // color: Colors.purple[300],
+                                      // ),
                                       Container(
                                         margin: const EdgeInsets.all(0.0),
                                         padding: const EdgeInsets.all(0),
