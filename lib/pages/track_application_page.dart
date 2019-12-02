@@ -8,8 +8,6 @@ class TrackApplicationPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
-  
     return new PjobStateContainer(
           child: Container(
           child: Scaffold(
@@ -44,6 +42,7 @@ class TrackApplicationPage extends StatelessWidget {
                   ],
                 )),
           ),
+
       ),
     );
   }

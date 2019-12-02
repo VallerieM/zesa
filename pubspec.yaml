@@ -14,7 +14,7 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.2.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -58,6 +58,8 @@ flutter:
    - android/assets/images/light-bulb-in-hand.png
    - android/assets/images/lightbulb.jpg
    - android/assets/images/myPower.png
+   - android/assets/images/vandalism.jpg
+   - android/assets/images/logo.png
 
   # assets:
   #  - images/a_dot_burr.jpeg
