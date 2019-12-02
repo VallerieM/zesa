@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:zetdc/pages/track_application_page.dart';
-import 'package:zetdc/pages/vacancies_tenders_page.dart';
+//import 'package:zetdc/pages/vacancies_tenders_page.dart';
 import 'package:zetdc/ui/main_page/applications_image.dart';
 import 'package:zetdc/ui/main_page/billing_image.dart';
 import 'package:zetdc/ui/main_page/drawer.dart';
 import 'package:zetdc/ui/main_page/outage_image.dart';
-import 'package:zetdc/ui/main_page/tenders_image.dart';
+//import 'package:zetdc/ui/main_page/tenders_image.dart';
 
 
 class MainPage extends StatelessWidget {
@@ -104,37 +104,37 @@ class MainPage extends StatelessWidget {
                                         ),
                                        // color: Colors.purple[200],
                                       ),
-                                      Container(
-                                        margin: const EdgeInsets.all(0.0),
-                                        padding: const EdgeInsets.all(0),
-                                        decoration: myBoxDecoration(),
-                                         child: Column(
-                                          children: <Widget>[
-                                            Container (
-                                              width: 120,
-                                              height: 80,
-                                              child: VacanciesTendersImage(),
-                                            ),
-                                           new FlatButton(
-                                                textColor: Colors.black,
-                                                onPressed: () {
-                                                    Navigator.push(
-                                                      context, 
-                                                      MaterialPageRoute(builder: (context) => VacanciesTendersPage()),
-                                                    );
-                                                },
-                                                child: Text("SUBSCRIBE", 
-                                                style: TextStyle(
-                                                  fontSize: 15, 
-                                                  fontWeight: FontWeight.bold,
-                                                  color: Colors.black),
-                                                  ),
-                                            ),
-                                            new Text('Vacancies and Tenders'),
-                                          ],
-                                        ),
-                                       // color: Colors.purple[300],
-                                      ),
+                                      // Container(
+                                      //   margin: const EdgeInsets.all(0.0),
+                                      //   padding: const EdgeInsets.all(0),
+                                      //   decoration: myBoxDecoration(),
+                                      //    child: Column(
+                                      //     children: <Widget>[
+                                      //       Container (
+                                      //         width: 120,
+                                      //         height: 80,
+                                      //         child: VacanciesTendersImage(),
+                                      //       ),
+                                      //      new FlatButton(
+                                      //           textColor: Colors.black,
+                                      //           onPressed: () {
+                                      //               Navigator.push(
+                                      //                 context, 
+                                      //                 MaterialPageRoute(builder: (context) => VacanciesTendersPage()),
+                                      //               );
+                                      //           },
+                                      //           child: Text("SUBSCRIBE", 
+                                      //           style: TextStyle(
+                                      //             fontSize: 15, 
+                                      //             fontWeight: FontWeight.bold,
+                                      //             color: Colors.black),
+                                      //             ),
+                                      //       ),
+                                      //       new Text('Vacancies and Tenders'),
+                                      //     ],
+                                      //   ),
+                                      //  // color: Colors.purple[300],
+                                      // ),
                                       Container(
                                         margin: const EdgeInsets.all(0.0),
                                         padding: const EdgeInsets.all(0),

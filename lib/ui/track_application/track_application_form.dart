@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zetdc/state/PjobState.dart';
 
 
 class ApplicationForm extends StatefulWidget {
@@ -10,8 +11,10 @@ class ApplicationForm extends StatefulWidget {
 
 class _ApplicationFormState extends State<ApplicationForm> {
   final _formKey = GlobalKey<FormState>();
+  String _pjobNum;
 @override
   Widget build(BuildContext context) {
+    final pjobState = PjobStateContainer.of(context);
     return Container(
       alignment: Alignment.center,
       child: Padding(
@@ -31,6 +34,7 @@ class _ApplicationFormState extends State<ApplicationForm> {
                       }
                       return null;
                     },
+                    onSaved: (value)  => _pjobNum = value,
                   ),
                                                  
                   Padding(
@@ -43,14 +47,11 @@ class _ApplicationFormState extends State<ApplicationForm> {
                               // Validate returns true if the form is valid, or false
                               // otherwise.
                               if (_formKey.currentState.validate()) {
-                                // If the form is valid, display a Snackbar.
-                                Scaffold.of(context)
-                                    .showSnackBar(SnackBar(content: Text('Processing Data')));
+                                  _formKey.currentState.save();     
                               }
-                             // Navigator.push(
-                            //  context, 
-                             // MaterialPageRoute(builder: (context) => MainPage()),
-                            //  );
+                       
+                              pjobState.updatePjobNumber(pjob:_pjobNum);
+
                             },
                             child: Text('TRACK'),
                             color: Theme.of(context).secondaryHeaderColor,

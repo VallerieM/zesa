@@ -9,7 +9,7 @@ class LandingImage extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("android/assets/images/billing.png"),
+              image: AssetImage("android/assets/images/billing.png, "),
               fit: BoxFit.cover,
             )
           ),

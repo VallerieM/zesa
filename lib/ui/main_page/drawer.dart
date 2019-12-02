@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:zetdc/pages/fault_reports_page.dart';
+import 'package:zetdc/pages/complaints_page.dart';
+import 'package:zetdc/pages/compliments_page.dart';
 import 'package:zetdc/pages/login_page.dart';
 import 'package:zetdc/pages/my_account_page.dart';
+import 'package:zetdc/pages/vandalism_page.dart';
 
 class AppDrawer extends StatelessWidget {
   Widget _createHeader() {
@@ -61,15 +63,35 @@ class AppDrawer extends StatelessWidget {
           _createDrawerItem(
               icon: Icons.collections_bookmark,
               text: 'Fault Reports',
+              onTap: () => {}),
+          _createDrawerItem(
+              icon: Icons.face,
+              text: 'Complaints',
               onTap: () => {
-                   
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ComplaintsPage()),
+                    )
                   }),
           _createDrawerItem(
-              icon: Icons.face, text: 'Complaints', onTap: () => {}),
+              icon: Icons.account_box,
+              text: 'Compliments',
+              onTap: () => {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ComplimentsPage()),
+                    )
+                  }),
           _createDrawerItem(
-              icon: Icons.account_box, text: 'Compliments', onTap: () => {}),
-          _createDrawerItem(
-              icon: Icons.stars, text: 'Report Vandalism', onTap: () => {}),
+              icon: Icons.stars,
+              text: 'Report Vandalism',
+              onTap: () => {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => VandalismPage()),
+                    )
+                  }),
           Divider(),
           _createDrawerItem(
               icon: Icons.bug_report,
