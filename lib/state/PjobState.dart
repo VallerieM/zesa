@@ -33,10 +33,9 @@ class PjobStateContainer extends StatefulWidget {
   // Exactly like MediaQuery.of and Theme.of
   // It basically says 'get the data from the widget of this type.
 
-  static StateContainerState of(BuildContext context) {
-    return (context.inheritFromWidgetOfExactType(_InheritedPjob)
-            as _InheritedPjob)
-        .data;
+  static StateContainerState of([BuildContext context, bool rebuild = true]) {
+return (rebuild ? context.inheritFromWidgetOfExactType(_InheritedPjob) as _InheritedPjob
+                    : context.ancestorWidgetOfExactType(_InheritedPjob) as _InheritedPjob).data;
   }
 
   @override

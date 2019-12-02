@@ -95,7 +95,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
                           ),
         
                         FlatButton(
-                          textColor: Colors.red,
+                          textColor: Theme.of(context).secondaryHeaderColor,
                           onPressed: () {
                             Navigator.push(
                               context, 
