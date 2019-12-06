@@ -24,7 +24,7 @@ class VandalismPage extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                  child: Image.asset('android/assets/images/vandalism.jpg'),
+                  child: Image.asset('android/assets/images/vandalism.png'),
                   ),
                   
               VandalismForm(),

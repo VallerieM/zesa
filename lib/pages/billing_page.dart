@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:zetdc/ui/track_application/application.dart';
-import 'package:zetdc/ui/track_application/track_application_form.dart';
-import '../state/PjobState.dart';
+import 'package:zetdc/ui/billing/billing_form.dart';
 
-class TrackApplicationPage extends StatelessWidget {
-  const TrackApplicationPage({Key key}) : super(key: key);
+class BillingPage extends StatelessWidget {
+  const BillingPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return new PjobStateContainer(
-          child: Container(
+    return new  Container(
           child: Scaffold(
             appBar: AppBar(
               centerTitle: true,
-              title: Text('TRACK APPLICATION', textAlign: TextAlign.center),
+              title: Text('BILLING', textAlign: TextAlign.center),
               leading: new IconButton(
                 icon: new Icon(Icons.arrow_back),
                 onPressed: () {
@@ -31,19 +28,17 @@ class TrackApplicationPage extends StatelessWidget {
                           Padding(
                               padding:
                                   EdgeInsets.fromLTRB(20.0, 0.0, 15.0, 0.0),
-                              child: Text('Application Tracker',
+                              child: Text('Request token',
                                   style: new TextStyle(
                                       color: Colors.black,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold))),
-                          ApplicationForm(),
-                          ApplicationData()
+                          BillingForm(),
                         ])
                   ],
                 )),
           ),
-
-      ),
+      
     );
   }
 }

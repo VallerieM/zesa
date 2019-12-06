@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zetdc/pages/complaints_page.dart';
 import 'package:zetdc/pages/compliments_page.dart';
+import 'package:zetdc/pages/corruption_page.dart';
 import 'package:zetdc/pages/login_page.dart';
 import 'package:zetdc/pages/my_account_page.dart';
 import 'package:zetdc/pages/vandalism_page.dart';
@@ -96,7 +97,12 @@ class AppDrawer extends StatelessWidget {
           _createDrawerItem(
               icon: Icons.bug_report,
               text: 'Report Corruption',
-              onTap: () => {}),
+              onTap: () => {
+                Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => CorruptionPage()),
+                    )
+              }),
           ListTile(
             title: Text('LOGOUT',
                 style: TextStyle(

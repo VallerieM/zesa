@@ -32,33 +32,12 @@ class _VandalismFormState extends State<VandalismForm> {
                   return null;
                 },
               ),
-               TextFormField(
+              SizedBox(height: 25), 
+              TextFormField(
                 decoration: InputDecoration(
-                  labelText: 'Your email',
-                  icon: Icon(Icons.email)),
-                validator: (value) {
-                  if (value.isEmpty) {
-                    return 'Required field';
-                  }
-                  return null;
-                },
-              ),
-               TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Subject',
-                  icon: Icon(Icons.email)),
-                validator: (value) {
-                  if (value.isEmpty) {
-                    return 'Required field';
-                  }
-                  return null;
-                },
-              ),
-               TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Your message',
-                  icon: Icon(Icons.email)),
-                  maxLines: 3,
+                  border: OutlineInputBorder(),
+                  labelText: 'Message', icon: Icon(Icons.email)),
+                maxLines: 3,
                 validator: (value) {
                   if (value.isEmpty) {
                     return 'Required field';
