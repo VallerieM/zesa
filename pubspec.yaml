@@ -58,7 +58,7 @@ flutter:
    - android/assets/images/light-bulb-in-hand.png
    - android/assets/images/lightbulb.jpg
    - android/assets/images/myPower.png
-   - android/assets/images/vandalism.jpg
+   - android/assets/images/vandalism.JPG
    - android/assets/images/logo.png
 
   # assets:
