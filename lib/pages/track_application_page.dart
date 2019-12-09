@@ -30,7 +30,7 @@ class TrackApplicationPage extends StatelessWidget {
                         children: <Widget>[
                           Padding(
                               padding:
-                                  EdgeInsets.fromLTRB(20.0, 10.0, 15.0, 10.0),
+                                  EdgeInsets.fromLTRB(20.0, 0.0, 15.0, 0.0),
                               child: Text('Application Tracker',
                                   style: new TextStyle(
                                       color: Colors.black,

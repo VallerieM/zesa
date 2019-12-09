@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:zetdc/ui/compliments_page/compliments_form.dart';
 
-class ComplimentsPage extends StatelessWidget {
-  const ComplimentsPage({Key key}) : super(key: key);
+class CorruptionPage extends StatelessWidget {
+  const CorruptionPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,20 +24,14 @@ class ComplimentsPage extends StatelessWidget {
             children: <Widget>[
               Padding(
                   padding: EdgeInsets.fromLTRB(20.0, 10.0, 15.0, 10.0),
-                  child: Text('Client Convinience through ICT..',
+                  child: Text('',
                       style: new TextStyle(
                           color: Colors.black,
                           fontSize: 20,
                           fontWeight: FontWeight.bold))),
+              Image.asset('android/assets/images/corruption.png'),
               ComplimentsForm(),
-              Padding(
-                  padding: EdgeInsets.fromLTRB(70.0, 0.0, 15.0, 20.0),
-                  child: Text(
-                      'Email: pr@zetdc.co.zw, marketing@zetdc.co.zw',
-                      style: new TextStyle(
-                          color: Colors.black,
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold))),
+              
             ],
           ),
         ),
