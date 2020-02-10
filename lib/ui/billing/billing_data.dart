@@ -3,9 +3,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:zetdc/state/BillingState.dart';
-import 'package:zetdc/state/PjobState.dart';
 import 'package:zetdc/utils/billing.dart';
-import 'package:zetdc/utils/pjob_data.dart';
 
 import 'package:http/http.dart' as http;
 

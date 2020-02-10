@@ -64,6 +64,8 @@ flutter:
    - android/assets/images/logo.png
    - android/assets/images/compliments.png
    - android/assets/images/corruption.png
+   - android/assets/images/greyoutage.jpeg
+   - android/assets/images/purchase.png
 
   # assets:
   #  - images/a_dot_burr.jpeg
