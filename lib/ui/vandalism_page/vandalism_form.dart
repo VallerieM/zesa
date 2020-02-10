@@ -5,7 +5,6 @@ import 'package:http/http.dart' as http;
 Future<bool> sentMail({Map<String, String> body}) async {
   final response = await http.post('http://10.0.2.2:4000/feedback/vandalism',body:body);
   if(response.statusCode == 200){
-
     return true;
   } else {
     return false;
