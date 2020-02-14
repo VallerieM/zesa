@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zetdc/ui/compliments_page/compliments_form.dart';
+import 'package:zetdc/ui/corruption_page/corruption_form.dart';
 
 class CorruptionPage extends StatelessWidget {
   const CorruptionPage({Key key}) : super(key: key);
@@ -30,7 +30,7 @@ class CorruptionPage extends StatelessWidget {
                           fontSize: 20,
                           fontWeight: FontWeight.bold))),
               Image.asset('android/assets/images/corruption.png'),
-              ComplimentsForm(),
+              CorruptionForm(),
               
             ],
           ),

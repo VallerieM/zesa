@@ -1,4 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
+Future<bool> sentMail({Map<String, String> body}) async {
+  final response = await http.post('http://10.0.2.2:4000/feedback/compliments',body:body);
+  if(response.statusCode == 200){
+    return true;
+  } else {
+    return false;
+  }
+}
 
 class ComplimentsForm extends StatefulWidget {
   ComplimentsForm({Key key}) : super(key: key);
@@ -9,6 +19,9 @@ class ComplimentsForm extends StatefulWidget {
 
 class _ComplimentsFormState extends State<ComplimentsForm> {
   final _formKey = GlobalKey<FormState>();
+  String _name;
+  String _message;
+  
 
   @override 
   Widget build(BuildContext context) {
@@ -25,6 +38,7 @@ class _ComplimentsFormState extends State<ComplimentsForm> {
                 decoration: InputDecoration(
                     labelText: 'Your name (Optional)',
                     icon: Icon(Icons.person)),
+                    onSaved:(value) => _name = value,
               ),
              SizedBox(height: 25),
              TextFormField(
@@ -46,13 +60,24 @@ class _ComplimentsFormState extends State<ComplimentsForm> {
                         children: <Widget>[
                           RaisedButton(
                             onPressed: () {
-                              // Validate returns true if the form is valid, or false
-                              // otherwise.
-                              if (_formKey.currentState.validate()) {
-                                // If the form is valid, display a Snackbar.
-                                Scaffold.of(context)
-                                    .showSnackBar(SnackBar(content: Text('Processing Data')));
-                              }
+                             _formKey.currentState.save();
+                          Future<bool> resp;
+                          resp = sentMail(body: {"name": "$_name","message" : "$_message"});
+                          print(_name);
+                          // Validate returns true if the form is valid, or false
+                          // otherwise.
+                          if (_formKey.currentState.validate()) {
+                            
+                            if(resp == true){
+                              // If the form is valid, display a Snackbar.
+                              Scaffold.of(context).showSnackBar(
+                                SnackBar(content: Text('Message sent ')));
+                            } else{
+                              Scaffold.of(context).showSnackBar(
+                                SnackBar(content: Text('Message not sent ')));
+                            }
+                            
+                          }
                              
                             },
                             child: Text('SEND'),
