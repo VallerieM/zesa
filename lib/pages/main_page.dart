@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:zetdc/pages/billing_page.dart';
-import 'package:zetdc/pages/purchase_page.dart';
+//import 'package:zetdc/pages/purchase_page.dart';
 import 'package:zetdc/pages/track_application_page.dart';
-//import 'package:zetdc/pages/vacancies_tenders_page.dart';
+import 'package:zetdc/pages/vacancies_tenders_page.dart';
 import 'package:zetdc/ui/main_page/applications_image.dart';
 import 'package:zetdc/ui/main_page/billing_image.dart';
 import 'package:zetdc/ui/main_page/drawer.dart';
-//import 'package:zetdc/ui/main_page/outage_image.dart';
-import 'package:zetdc/ui/main_page/purchase_image.dart';
-//import 'package:zetdc/ui/main_page/tenders_image.dart';
+import 'package:zetdc/ui/main_page/outage_image.dart';
+//import 'package:zetdc/ui/main_page/purchase_image.dart';
+import 'package:zetdc/ui/main_page/tenders_image.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({Key key}) : super(key: key);
@@ -175,40 +175,40 @@ class MainPage extends StatelessWidget {
                       ),
                       // color: Colors.purple[400],
                     ),
-                     Container(
-                      margin: const EdgeInsets.all(0.0),
-                      padding: const EdgeInsets.all(0),
-                      decoration: myBoxDecoration(),
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                            width: 140,
-                            height: 80,
-                            child: PurchaseImage(),
-                          ),
-                          new FlatButton(
-                            textColor: Colors.black,
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) =>
-                                        PurchasePage()),
-                              );
-                            },
-                            child: Text(
-                              "PURCHASE",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.black),
-                            ),
-                          ),
-                          new Text('Buy Zesa tokens'),
-                        ],
-                      ),
-                      // color: Colors.purple[300],
-                    ),
+                    //  Container(
+                    //   margin: const EdgeInsets.all(0.0),
+                    //   padding: const EdgeInsets.all(0),
+                    //   decoration: myBoxDecoration(),
+                    //   child: Column(
+                    //     children: <Widget>[
+                    //       Container(
+                    //         width: 140,
+                    //         height: 80,
+                    //         child: PurchaseImage(),
+                    //       ),
+                    //       new FlatButton(
+                    //         textColor: Colors.black,
+                    //         onPressed: () {
+                    //           Navigator.push(
+                    //             context,
+                    //             MaterialPageRoute(
+                    //                 builder: (context) =>
+                    //                     PurchasePage()),
+                    //           );
+                    //         },
+                    //         child: Text(
+                    //           "PURCHASE",
+                    //           style: TextStyle(
+                    //               fontSize: 15,
+                    //               fontWeight: FontWeight.bold,
+                    //               color: Colors.black),
+                    //         ),
+                    //       ),
+                    //       new Text('Buy Zesa tokens'),
+                    //     ],
+                    //   ),
+                    //   // color: Colors.purple[300],
+                    // ),
                   ],
                 ),
               )

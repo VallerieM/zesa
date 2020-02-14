@@ -3,12 +3,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:zetdc/state/BillingState.dart';
-<<<<<<< HEAD
-=======
 
 import 'package:zetdc/utils/billing.dart';
-
->>>>>>> 3af53f205d88448c3f637739231ecc31f08f2e1c
 
 import 'package:http/http.dart' as http;
 

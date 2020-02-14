@@ -81,7 +81,7 @@ class _VandalismFormState extends State<VandalismForm> {
                                 SnackBar(content: Text('Message sent ')));
                             } else{
                               Scaffold.of(context).showSnackBar(
-                                SnackBar(content: Text('Message sent ')));
+                                SnackBar(content: Text('Message not sent ')));
                             }
                             
                           }
