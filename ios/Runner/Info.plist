@@ -11,7 +11,11 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
+<<<<<<< HEAD
 	<string>zetdc_loadshedding</string>
+=======
+	<string>zetdc</string>
+>>>>>>> 0d0b20ae91b646226d4b5329477a8f9d82efd615
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

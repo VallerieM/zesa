@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # zetdc_loadshedding
+=======
+# zetdc
+>>>>>>> 0d0b20ae91b646226d4b5329477a8f9d82efd615
 
 A new Flutter project.
 

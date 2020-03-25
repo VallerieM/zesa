@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:zetdc/pages/main_page.dart';
+import 'package:zetdc/pages/registration_page.dart';
 
 class LoginForm extends StatefulWidget {
   LoginForm({Key key}) : super(key: key);
@@ -10,41 +12,41 @@ class LoginForm extends StatefulWidget {
 class _LoginFormState extends State<LoginForm> {
   final _formKey = GlobalKey<FormState>();
 
-  @override
+  @override 
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: 50.0),
-          child: Form(
-              key: _formKey,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  TextFormField(
-                    decoration: InputDecoration(
-                      labelText: 'Enter your username',
-                      icon: Icon(Icons.person)),
-                    validator: (value) {
-                      if (value.isEmpty) {
-                        return 'Please enter some text';
-                      }
-                      return null;
-                    },
-                  ),
-                  TextFormField(
-                      obscureText: true,
-                      decoration: InputDecoration(
-                        labelText: 'Enter your password',
-                        icon: Icon(Icons.lock)),
-                      validator: (value) {
+        child: Form(
+          key: _formKey,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Enter your username',
+                  icon: Icon(Icons.person)),
+                validator: (value) {
+                  if (value.isEmpty) {
+                    return 'Required field';
+                  }
+                  return null;
+                },
+              ),
+              TextFormField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  labelText: 'Enter your password',
+                  icon: Icon(Icons.lock)),
+                   validator: (value) {
                         if (value.isEmpty) {
-                          return 'Please enter some text';
+                          return 'Required field';
                         }
                         return null;
                       },
-                    ),
-                  Padding(
+              ),
+             Padding(
                       padding: const EdgeInsets.symmetric(vertical: 16.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -58,9 +60,13 @@ class _LoginFormState extends State<LoginForm> {
                                 Scaffold.of(context)
                                     .showSnackBar(SnackBar(content: Text('Processing Data')));
                               }
+                              Navigator.push(
+                              context, 
+                              MaterialPageRoute(builder: (context) => MainPage()),
+                              );
                             },
                             child: Text('LOGIN'),
-                            color: Theme.of(context).accentColor,
+                            color: Theme.of(context).primaryColor,
                             textColor: Colors.white,
                             splashColor: Colors.grey,
                           ),
@@ -68,6 +74,10 @@ class _LoginFormState extends State<LoginForm> {
                         FlatButton(
                           textColor: Colors.red,
                           onPressed: () {
+                            Navigator.push(
+                              context, 
+                              MaterialPageRoute(builder: (context) => RegistrationPage()),
+                              );
                             /*...*/
                           },
                           child: Text(
@@ -78,10 +88,9 @@ class _LoginFormState extends State<LoginForm> {
                         ],
                       )
                     )
-                ],
-              ),
-       ),
-      ),
-    );
+            ],),
+        ),
+        ),
+        );
   }
 }

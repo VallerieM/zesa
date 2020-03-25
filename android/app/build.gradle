@@ -38,7 +38,11 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+<<<<<<< HEAD
         applicationId "com.example.zetdc_loadshedding"
+=======
+        applicationId "com.example.zetdc"
+>>>>>>> 0d0b20ae91b646226d4b5329477a8f9d82efd615
         minSdkVersion 16
         targetSdkVersion 28
         versionCode flutterVersionCode.toInteger()
